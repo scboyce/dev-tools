@@ -1,0 +1,43 @@
+#!/usr/bin/perl
+
+use CGI;
+use Carp;
+use Cwd;
+use DBI;
+use DBD::Oracle;
+use Date::Pcalc;
+use Digest::MD5;
+use Encode;
+use Env;
+use Fcntl;
+use File::Basename;
+use File::Copy;
+use File::Temp;
+use File::stat;
+use FindBin;
+use Getopt::Std;
+use IO::File;
+use IO::Handle;
+use IO::Pty;
+use Jcode;
+use LWP::Protocol::https;
+use LWP;
+use Log::Log4perl;
+use Mail::Mailer;
+use Net::FTP;
+use Net::SFTP;
+use Net::SFTP::Foreign;
+use Net::SSLeay;
+use POSIX qw(strftime); # for pretty timestamps
+use POSIX;
+use SOAP::Lite;
+use strict;
+use Sys::Hostname;
+use Sys::Syslog;
+use URI::Escape;
+use WWW::Salesforce;
+use XML::Reader;
+use XML::Writer;
+use YAML::Tiny;
+use threads ('exit' => 'threads_only', 'stringify');
+use threads::shared;
