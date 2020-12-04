@@ -6,6 +6,7 @@ Adapted by Steve Boyce 1997
 --------------------------------------------------------------------*/
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define        MAX_LENGTH 120
 #define        TRUE         1
