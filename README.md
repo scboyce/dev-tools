@@ -7,7 +7,6 @@ Install:
 - tree
 
 Directory structure of C Projects:
-
 -- dev-tools
    +-- .git
    +-- .gitignore      Configured to ignore "build" directories everywhere!
@@ -18,3 +17,5 @@ Directory structure of C Projects:
    |       +-- xlist   executable file (ignored by git)
    +-- (More C projects)
        +-- ...
+
+More changes
